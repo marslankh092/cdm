@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="165dp"
+    android:layout_height="246dp"
+    app:cardBackgroundColor="@color/colorDarkGrey"
+    app:cardCornerRadius="9dp"
+    android:layout_margin="12dp"
+    app:cardElevation="9dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:id="@+id/most_visited_video_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"  />
+
+        <ImageView
+            android:id="@+id/most_visited_play_button"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_baseline_play_circle_outline_24"
+            app:tint="@color/white" />
+
+
+        <TextView
+            android:id="@+id/most_visited_vide_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Most Visited "
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
